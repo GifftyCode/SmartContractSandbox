@@ -14,3 +14,4 @@ contract CrowdFunding {
     address public contributor;
 
 }
+
