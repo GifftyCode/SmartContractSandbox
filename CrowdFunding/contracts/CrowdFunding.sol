@@ -51,14 +51,30 @@ contract CrowdFunding {
 
     }
 
-    function withdraw() external onlyOwner payable {
-        require(isTargetMet, 'Target is not yet Met');
-        require(isFundingCompleted, 'Funding deadline not reached yet');
+        function withdraw() external onlyOwner payable {
+            require(isTargetMet, 'Target is not yet Met');
+            require(isFundingCompleted, 'Funding deadline not reached yet');
 
-        isFundingCompleted = true;
-        payable(owner).transfer(address(this).balance);
+            isFundingCompleted = true;
+            payable(owner).transfer(address(this).balance);
 
-    }
+        }
+
+            function getRefund() public payable  {
+            require(block.timestamp >= deadline, 'Funding has not ended yet');
+            require(!isTargetMet, 'Target has been met already');
+            require(individualContribution[msg.sender] > 0, 'No contribution to refund');
+
+            uint contribution = individualContribution[msg.sender];
+            individualContribution[msg.sender] = 0;
+            totalContribution -= contribution;
+
+            payable(msg.sender).transfer(contribution);
+
+            emit TransferSuccessful(msg.sender, contribution);
+
+
+        }
 
 }
 
