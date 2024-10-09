@@ -51,5 +51,14 @@ contract CrowdFunding {
 
     }
 
+    function withdraw() external onlyOwner payable {
+        require(isTargetMet, 'Target is not yet Met');
+        require(isFundingCompleted, 'Funding deadline not reached yet');
+
+        isFundingCompleted = true;
+        payable(owner).transfer(address(this).balance);
+
+    }
+
 }
 
