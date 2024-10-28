@@ -10,19 +10,19 @@ pragma solidity ^0.8.0;
 contract Calculator {
     uint256 result;
 
-    function add(uint256 num) public {
+    function add(uint256 num) external {
         result += num;
     }
 
-    function subtract(uint256 num) public {
+    function subtract(uint256 num) external {
         result -= num;
     }
 
-    function multiply(uint256 num) public {
+    function multiply(uint256 num) external {
         result *= num;
     }
 
-    function divide(uint256 num) public {
+    function divide(uint256 num) external {
         result /= num;
     }
 
