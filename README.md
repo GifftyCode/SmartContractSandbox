@@ -7,14 +7,11 @@ This repository serves as a personal playground and archive for experimenting wi
 ## Project Structure
 
 SmartContractSandbox
-│
-├── contracts/          # Smart contract source files
-│
-├── scripts/           # Deployment & testing scripts
-│
-├── test/             # Test files
-│
-└── examples/         # Example usage and demonstrations
+    |
+    |-- contracts/       # Smart contract source files
+    |-- scripts/         # Deployment & testing scripts
+    |-- test/           # Test files
+    |-- examples/       # Example usage and demonstrations
 
 ## Featured Projects
 
