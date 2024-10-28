@@ -8,25 +8,13 @@ This repository serves as a personal playground and archive for experimenting wi
 
 
 📁 SmartContractSandbox/
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<br>
 ├── 📁 contracts/           # Smart contract source files
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<br>
 ├── 📁 scripts/            # Deployment & testing scripts
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<br>
 ├── 📁 test/              # Test files
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+<br>
 └── 📁 examples/          # Example usage and demonstrations
 
 ## Featured Projects
