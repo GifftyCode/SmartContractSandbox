@@ -5,11 +5,16 @@
 This repository serves as a personal playground and archive for experimenting with smart contract development. It contains various small-scale projects, proof-of-concepts, and implementation ideas using Solidity and other blockchain technologies.
 
 ## Project Structure
-SmartContractSandbox/
-├── contracts/           # Smart contract source files
-├── scripts/            # Deployment & testing scripts
-├── test/              # Test files
-└── examples/          # Example usage and demonstrations
+
+SmartContractSandbox
+│
+├── contracts/          # Smart contract source files
+│
+├── scripts/           # Deployment & testing scripts
+│
+├── test/             # Test files
+│
+└── examples/         # Example usage and demonstrations
 
 ## Featured Projects
 
