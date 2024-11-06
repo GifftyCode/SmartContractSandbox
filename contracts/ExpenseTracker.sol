@@ -19,4 +19,14 @@ contract ExpenseTracker {
     function addExpense(uint256 _amount, string memory _description) external {
         expenses.push(Expense(msg.sender, _amount, _description));
     }
+
+    function getAllExpenses(address _user) external view returns(uint) {
+        uint256 totalExpenses;
+        for (uint i = 0; i < expenses.length; i++) {
+            if (expenses[i].user == _user) {
+                totalExpenses += expenses[i].amount;
+            }
+            return totalExpenses;
+        }
+    }
 }
