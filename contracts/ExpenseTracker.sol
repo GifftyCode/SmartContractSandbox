@@ -26,7 +26,8 @@ contract ExpenseTracker {
             if (expenses[i].user == _user) {
                 totalExpenses += expenses[i].amount;
             }
-            return totalExpenses;
+            
         }
+        return totalExpenses;
     }
 }
